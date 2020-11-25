@@ -1,0 +1,112 @@
+body {
+	background-color: #082331;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#board {
+	position: relative;
+	width: 1537px;
+	height: 863px;
+	margin: auto;
+	background: url("./image/tlo.jpg") no-repeat;
+}
+
+#messageArea {
+	top: 0px;
+	left: 0px;
+	padding: 30px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 1.3rem;
+}
+
+#informacje{
+	position: absolute;
+	padding-left: 20px;
+	color: #ffffff;
+}
+#misja{
+	position: relative;
+	margin-top: -60px;
+	color: #ffffff;
+	text-align: center;	
+}
+
+#reset{
+	padding: 8px;
+	cursor: pointer;
+	display: none;
+	background-color: #4CAF50; 
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.hit {
+	background: url("./image/ship.png") no-repeat center center;
+	animation: shake 0.7s linear;
+}
+
+.miss {
+	/*background: #EC0000;*/
+	background: url("./image/plomien.gif") no-repeat;
+	background-size: 90px 90px;
+}
+
+table {
+	border-collapse: collapse; 
+	position: absolute;
+	left: 433px;
+	top: 98px;
+	cursor: pointer;
+}
+
+td {
+	border: 1px solid #CCFFFF;
+	width: 94px;
+	height: 94px;
+}
+
+form {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	padding: 15px;
+	background-color: rgb(83, 175, 19);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+form input {
+	background-color: rgb(152, 207, 113);
+	border-color: rgb(83, 175, 19);
+	font-size: 1em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+	transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+	transform: translateX(-0.4em);
+  }
+  20%,
+  40%,
+  60% {
+	transform: translateX(0.4em);
+  }
+  80% {
+	transform: translateX(0.3em);
+  }
+  90% {
+	transform: translateX(-0.3em);
+  }
+}
